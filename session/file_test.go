@@ -13,7 +13,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/xelaj/mtproto/internal/session"
+	"github.com/xelaj/mtproto/session"
 )
 
 func TestMTProto_SaveSession(t *testing.T) {

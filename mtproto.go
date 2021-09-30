@@ -21,9 +21,9 @@ import (
 	"github.com/xelaj/mtproto/internal/mode"
 	"github.com/xelaj/mtproto/internal/mtproto/messages"
 	"github.com/xelaj/mtproto/internal/mtproto/objects"
-	"github.com/xelaj/mtproto/internal/session"
 	"github.com/xelaj/mtproto/internal/transport"
 	"github.com/xelaj/mtproto/internal/utils"
+	"github.com/xelaj/mtproto/session"
 )
 
 type MTProto struct {

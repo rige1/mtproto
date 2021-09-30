@@ -10,8 +10,8 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/xelaj/mtproto/internal/encoding/tl"
-	"github.com/xelaj/mtproto/internal/session"
 	"github.com/xelaj/mtproto/internal/utils"
+	"github.com/xelaj/mtproto/session"
 )
 
 // helper methods
