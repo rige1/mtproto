@@ -12,6 +12,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/xelaj/go-dry"
 	"github.com/xelaj/mtproto"
+	"github.com/xelaj/mtproto/session"
 	"github.com/xelaj/mtproto/telegram"
 
 	utils "github.com/xelaj/mtproto/examples/example_utils"
@@ -32,7 +33,7 @@ func main() {
 	// edit these params for you!
 	client, err := telegram.NewClient(telegram.ClientConfig{
 		// where to store session configuration. must be set
-		SessionFile: sessionFile,
+		SessionStorage: session.NewFromFile(sessionFile),
 		// host address of mtproto server. Actually, it can be any mtproxy, not only official
 		ServerHost: "149.154.167.50:443",
 		// public keys file is path to file with public keys, which you must get from https://my.telegram.org
